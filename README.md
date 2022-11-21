@@ -23,9 +23,9 @@ Changes to be committed:
         new file:   .idea/vcs.xml
         new file:   ejercicioGit3.iml
         new file:   src/Main.java
-´´´
+```
 3. Añadimos el repositorio de GitHub como remoto e intentamos hacer un pull:
-
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git remote add origin https://github.com/brimacias/ejemploGit3.git
 
@@ -39,9 +39,9 @@ Unpacking objects: 100% (4/4), 838 bytes | 0 bytes/s, done.
 From https://github.com/brimacias/ejemploGit3
  * branch            main       -> FETCH_HEAD
  * [new branch]      main       -> origin/main
- 
+ ```
  4. Quitamos los cambios del stage:
-
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git rm --cached -r .
 rm '.gitignore'
@@ -68,17 +68,17 @@ Untracked files:
         README.md
         ejercicioGit3.iml
         src/
-
+```
 5. Ahora los cambios están sin trackear.Hacemos de nuevo el pull.
-
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git pull origin main
 From https://github.com/brimacias/ejemploGit3
  * branch            main       -> FETCH_HEAD
 Already up to date.
-
+```
 6. Ya está descargado lo que estaba en remoto (el README y el .gitignore de GitHub) en la rama main (rama por defecto en GitHub) a nuestra rama master local. Ahora commiteamos el proyecto local y lo subimos al repositorio.
-
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git add .
 warning: in the working copy of 'src/Main.java', LF will be replaced by CRLF the next time Git touches it
@@ -119,7 +119,7 @@ a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3
 $ git log --oneline
 bebf7d7 (HEAD -> master, origin/master) primer commit local
 bb912e3 (origin/main) Initial commit
-
+```
 7. Se ha subido correctamente en la rama main:
 
 ![ejGit3_captura_3](https://user-images.githubusercontent.com/95747897/203100885-e0657f9a-4ea9-4730-a8d9-0ffb5865404a.png)
@@ -131,20 +131,20 @@ bb912e3 (origin/main) Initial commit
 ![ejGit3_captura_6](https://user-images.githubusercontent.com/95747897/203101108-0cac10df-8b53-4c5b-8f33-82cdaf5238c7.png)
 
 9. Modificamos el proyecto local(se hacen añade un clase y se modifica Main):
-
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git commit -m"añadiendo código para probar las propiedades de Java"
-
+```
 10. Creamos otra rama para corregir un bug:
-
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git checkout -b fixBug1
 Switched to a new branch 'fixBug1'
 
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (fixBug1)
-
+```
 11. Corregimos el problema, commiteamos la corrección en la rama y la pusheamos:
-
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (fixBug1)
 $ git add .
 warning: in the working copy of 'src/Main.java', LF will be replaced by CRLF the next time Git touches it
@@ -179,9 +179,9 @@ remote:
 To https://github.com/brimacias/ejemploGit3.git
  * [new branch]      fixBug1 -> fixBug1
 branch 'fixBug1' set up to track 'origin/fixBug1'.
-
+```
 12. Mergeamos a master la rama con el bug ya solucionado:
-
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (fixBug1)
 $ git checkout master
 Switched to branch 'master'
@@ -206,5 +206,5 @@ Fast-forward
  create mode 100644 ejercicioGit3.iml
  create mode 100644 src/Empleado.java
  create mode 100644 src/Main.java
-
+```
 13. Añado este README y la carpeta de imágenes.
