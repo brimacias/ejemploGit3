@@ -8,6 +8,7 @@
 
 ![ejGit3_captura_2](https://user-images.githubusercontent.com/95747897/203098238-4500f6cc-f234-4c37-98c9-ad6aadbfe722.png)
 
+```
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git status
 On branch master
@@ -22,7 +23,7 @@ Changes to be committed:
         new file:   .idea/vcs.xml
         new file:   ejercicioGit3.iml
         new file:   src/Main.java
-
+´´´
 3. Añadimos el repositorio de GitHub como remoto e intentamos hacer un pull:
 
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
