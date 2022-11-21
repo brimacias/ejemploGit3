@@ -5,5 +5,6 @@ public class Main {
 
         p.nombre = "Otro nombre";
         System.out.println(p);
+        
     }
 }
