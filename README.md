@@ -24,8 +24,10 @@ Changes to be committed:
         new file:   src/Main.java
 
 3. Añadimos el repositorio de GitHub como remoto e intentamos hacer un pull:
+
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git remote add origin https://github.com/brimacias/ejemploGit3.git
+
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git pull origin main
 remote: Enumerating objects: 4, done.
@@ -38,7 +40,8 @@ From https://github.com/brimacias/ejemploGit3
  * [new branch]      main       -> origin/main
  
  4. Quitamos los cambios del stage:
- a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
+
+a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git rm --cached -r .
 rm '.gitignore'
 rm '.idea/.gitignore'
@@ -66,6 +69,7 @@ Untracked files:
         src/
 
 5. Ahora los cambios están sin trackear.Hacemos de nuevo el pull.
+
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git pull origin main
 From https://github.com/brimacias/ejemploGit3
@@ -73,9 +77,11 @@ From https://github.com/brimacias/ejemploGit3
 Already up to date.
 
 6. Ya está descargado lo que estaba en remoto (el README y el .gitignore de GitHub) en la rama main (rama por defecto en GitHub) a nuestra rama master local. Ahora commiteamos el proyecto local y lo subimos al repositorio.
+
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git add .
 warning: in the working copy of 'src/Main.java', LF will be replaced by CRLF the next time Git touches it
+
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git commit -m "primer commit local"
 [master bebf7d7] primer commit local
@@ -86,10 +92,12 @@ $ git commit -m "primer commit local"
  create mode 100644 .idea/vcs.xml
  create mode 100644 ejercicioGit3.iml
  create mode 100644 src/Main.java
+
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git log --oneline
 bebf7d7 (HEAD -> master) primer commit local
 bb912e3 (origin/main) Initial commit
+
 a21brigittemmp@W10N-I9E25 MINGW64 /z/PDAW/Nuevo/Código/codigo_git/ejercicioGit3 (master)
 $ git push -u origin master
 Enumerating objects: 11, done.
